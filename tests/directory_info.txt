@@ -1,0 +1,6 @@
+tests directory:
+
+    contains automated tests 
+        example would be a php unit test 
+    each test class should be suffixed with the word 'Test'
+        command prompts available for testing

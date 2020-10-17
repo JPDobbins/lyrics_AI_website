@@ -1,0 +1,4 @@
+Connfig directory: 
+
+    contains all applications configuration files 
+    

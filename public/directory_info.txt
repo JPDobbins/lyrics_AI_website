@@ -1,0 +1,8 @@
+public directory:
+
+    cintains index.php file 
+        entry point for requests entering applications 
+        configures autoloading 
+    houses assets e.g. images, javascripts, css 
+
+    

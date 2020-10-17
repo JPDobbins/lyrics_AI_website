@@ -1,0 +1,15 @@
+routes directory:
+
+    contains all route definitions for application
+    default route files included with laravel:
+        web.php
+        api.php
+        console.php
+        channels.php
+
+    web.php: 
+        if application does not offer stateless, REST API all, routes will likely be defined here 
+
+    api.php:
+        ... 
+

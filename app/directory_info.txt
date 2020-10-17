@@ -1,0 +1,36 @@
+App directory:
+
+contains core code of application 
+Almost all class in application will be in this directory 
+
+    Console directory:
+
+    contains custom artisan commands for application 
+        commands are generated using make:command 
+    contains console kernal 
+        customer artisan commands are registered and scheduled tasks are defined 
+
+    Exceptions directory:
+
+    contains applications exception handler php file 
+        customise logging and rendering of exceptions thrown by application 
+    recommend storing any exceptions thrown by application within this directory 
+
+    http directory: 
+
+    contains controllers, middleware and form requests 
+    store logic to handle requests entering application here 
+
+    Models directory: 
+
+    contains all eloquent model classes
+    eloquent ORM (Object Relational Mapping) provies ActiveRecord implementation for working with the database
+        each table is to be assigned its own 'model' 
+        each model is responsible for interacting with the table 
+        models implement the query and inserting of data to the table 
+    
+    Providers directory:
+
+    contains all service providers for application 
+        service providers bootstrap alllication to prepare for incoming requests 
+        

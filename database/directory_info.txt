@@ -1,0 +1,4 @@
+database diretory:
+
+    contains database migrations, model factories, and seeds 
+    

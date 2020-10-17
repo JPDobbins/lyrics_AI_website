@@ -1,0 +1,4 @@
+Bootstrap directory:
+
+    contains app.php file which bootstraps the framework
+    

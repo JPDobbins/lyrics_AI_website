@@ -1,0 +1,10 @@
+resources directory:
+
+    contains all uncompiled assets e.g. LESS, SASS, JavaScript
+    contains views directory  
+        also contains all language files 
+    
+    Views directory:
+        Contais the HTML served by application
+        Seperates controller / application logic from your presentation logic 
+        

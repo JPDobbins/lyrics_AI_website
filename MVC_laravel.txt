@@ -1,0 +1,35 @@
+laravel implementation w.r.t. MVC 
+
+MODELS: 
+    directory: /app/
+    object through which:
+        - data is written to / retrieved from database 
+        - function relating to object that can be written  
+    objects defined as eloquent model classes
+    eloquent ORM (Object Relational Mapping) provies ActiveRecord implementation for working with the database
+        - each table is to be assigned its own 'model' 
+        - each model is responsible for interacting with the table 
+        - models implement the query and inserting of data to the table
+
+
+VIEWS:
+    directory: /resources/views 
+    where http page/response is typically constructed 
+    Seperates controller / application logic from your presentation logic 
+    views typically: 
+        - extend a base layout
+            @extends('layouts.base')
+        - injected into base page 
+            @section('body')
+        Display data from model objects 
+            <div>record: {{$record ->id}}</div>
+        Many include hrefs to routes to other views 
+            <a href=> ...
+        could include form through which user - inputted data is submitted 
+            <form>....
+
+CONTROLLER:
+    directory: /app/http/controllers 
+    Where core processing and preparation of data takes place
+    return content direct to browser 
+        Route:: 
