@@ -49,7 +49,7 @@
                 </div>
                 <p> 
                     <span v-if="checkMeOnEveryChange">
-                    <!--   insert message warning of invalid error--> Temperature should be between 0.5 and 1
+                    <!--   insert message warning of invalid error--> Temperature must be equal to or greater than 1 to ensure randomness from language model sampling
                     <a class="btn btn-secondary" href="https://www.nature.com/articles/srep19133">See more<a>
                     </span>
                 </p>
@@ -64,7 +64,7 @@
                     <input type="text" class="form-control" name="topK" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
                 </div>
                 <p>
-                    <span v-if="">
+                    <span v-if="checkTopK">
                         <!-- insert message warning of invalid error--> Top_k should be at least 30 to provide optimal results
                         <a class="btn btn-secondary" href="https://arxiv.org/pdf/1805.04833.pdf">See more<a>
                     </span>
@@ -139,15 +139,23 @@
                 }
             },
             checkTopP: function() {
-                if (topP > 1 ||rn true;
-                } topP < 0) {
-                    retu
+                if (topP > 1  || topP < 0) {
+                    return true;
+                }
                 else {
                     return false;
                 }
-            }
+            },
             checkTopK: function() {
                 if (topK < 30) {
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            },
+            checkTemperature: function() {
+                if (Temperature < 1) {
                     return true;
                 }
                 else {
